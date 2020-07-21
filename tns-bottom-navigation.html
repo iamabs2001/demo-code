@@ -1,0 +1,46 @@
+<BottomNavigation selectedIndex="0">
+    
+    <!-- Tabs  -->
+    <TabStrip>
+        <TabStripItem class="navigation__item">
+            <Label text="News"></Label>
+            <Image src="res://home" class="fas t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+                <Label text="Today"></Label>
+                <Image src="res://today" class="fas t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="search"></Label>
+            <Image src="res://search" class="far t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="Popular"></Label>
+            <Image src="res://popular" class="fas t-36"></Image>
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+                <Label text="setting"></Label>
+                <Image src="res://setting" class="fas t-36"></Image>
+        </TabStripItem>
+    </TabStrip>
+    
+    <!-- Tab data -->
+    
+    <TabContentItem>
+        <page-router-outlet></page-router-outlet>
+    </TabContentItem>
+    <TabContentItem>
+        <ns-today></ns-today>
+    </TabContentItem>
+    <TabContentItem>
+        <ns-search></ns-search>
+    </TabContentItem>
+    <TabContentItem>
+        <ns-popular></ns-popular>
+    </TabContentItem>
+    <TabContentItem>
+        <ns-setting></ns-setting>
+    </TabContentItem>
+    
+    
+</BottomNavigation>
